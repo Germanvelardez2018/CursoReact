@@ -1,13 +1,13 @@
 import  React from "react";
 import  ReactDOM  from "react-dom/client";
+import {App} from './components/App.jsx';
 
-const App = ()=>{
-    
-    return <h1> Hola mundo</h1> 
+import {Title} from './components/Title'
 
-}
+
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
+        <Title title = 'titulo'/>
         <App/>
     </React.StrictMode>
 );
