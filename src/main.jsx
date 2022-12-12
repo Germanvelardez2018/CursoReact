@@ -9,7 +9,7 @@ import './css/index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <Title/>
+        <Title title="title of my aplication"/>
         <App/>
     </React.StrictMode>
 );

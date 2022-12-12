@@ -1,19 +1,30 @@
-import { Fragment } from "react"
+import PropTypes from 'prop-types'
 
 const title = "El titulo principal"
 
 
 
-export const Title = (props) => {
+export const Title = ({title}) => {
   
-  console.log(props.title)
+  console.log(title)
   
   return (
-    <Fragment>
-       <header><h1>{title} </h1></header>
-        <h3> Subtitulo:{props.title} </h3>
-    </Fragment>
+  <>
+    <header><h1>{title} </h1></header>
+    <h3> Subtitulo:{title} </h3>
+  </>
+     
    
   )
 }
 
+
+
+Title.propTypes ={
+  title:PropTypes.string.isRequired
+}
+
+
+Title.defaultProps ={
+  title: 'No title'
+}
